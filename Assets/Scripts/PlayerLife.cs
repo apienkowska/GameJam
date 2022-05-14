@@ -59,6 +59,7 @@ public class PlayerLife : MonoBehaviour
 	{
 		rb.bodyType = RigidbodyType2D.Static;
 		anim.SetTrigger("death");
+		SceneManager.LoadScene("Corrupted");
 	}
 
 	private void RestartLevel()
