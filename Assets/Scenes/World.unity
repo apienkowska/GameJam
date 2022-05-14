@@ -436,7 +436,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 87dd5ff33e0487141a628453b8ea1392, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a50b1a4007568034990bfc01d6b1652e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2270,11 +2270,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LifeLevel: 100
   LifeText: {fileID: 1019586794}
-  spriteBlinkingTimer: 0
-  spriteBlinkingMiniDuration: 0.1
-  spriteBlinkingTotalTimer: 0
-  spriteBlinkingTotalDuration: 1
-  startBlinking: 0
+  startFading: 0
+  blinkColor1: {r: 0.735849, g: 0.35751158, b: 0.35751158, a: 1}
+  blinkColor2: {r: 0.9056604, g: 0.756141, b: 0.756141, a: 0.6862745}
+  blinkTime: 0.1
 --- !u!1 &1323958804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,6 +2285,7 @@ GameObject:
   - component: {fileID: 1323958807}
   - component: {fileID: 1323958806}
   - component: {fileID: 1323958805}
+  - component: {fileID: 1323958808}
   m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2328,7 +2328,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.628035
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2358,6 +2358,21 @@ Transform:
   m_Father: {fileID: 887757059}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1323958808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323958804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9075323f19f487488c9f4ab4b5b15e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 887757059}
+  maxPosition: {x: 70.4, y: 33.2}
+  minPosition: {x: -5.1, y: -17}
 --- !u!1 &1388616248
 GameObject:
   m_ObjectHideFlags: 0
