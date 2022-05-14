@@ -12,7 +12,19 @@ public class Talk : MonoBehaviour
 	private SpriteRenderer sprite;
 	private BoxCollider2D coll;
 	private Animator anim;
-	[SerializeField] private GameObject playerObj;
+	[SerializeField] public float talkRaidus;
+	[SerializeField] Transform target;
+	[SerializeField] public GameObject dialogBox;
+	[SerializeField] public Text dialogText;
+	private string dialog;
+	[SerializeField] public bool dialogActive;
+	private float TimeChangeText=0.005f;
+	private float TimerText=0.0f;
+	private int num=0;
+	string[] DialogList={"...mmhhmm !!!", 
+		" I know you! / I don’t recognize you!", 
+		"Pinch me! Could this be a dream?",
+		"So tired! Can’t wait to get some sleep!" };
 	void Start()
     {
        rb=GetComponent<Rigidbody2D>();
@@ -22,21 +34,57 @@ public class Talk : MonoBehaviour
 	   
     }
 	void Update(){
-		anim.ResetTrigger("talk");
+		
+			TimerText+=Time.deltaTime;
+			if (dialogBox.activeInHierarchy)
+			{
+				dialogBox.SetActive(false);
+				
+			}
+			else{
+				dialogText.text = dialog;
+				dialogBox.SetActive(true);
+				
+			}
+		CheckDistance();
 	}
 	
-	private void OnCollisionEnter2D(Collision2D collision)
+
+	int RandomAtMoment()
 	{
-		anim.SetTrigger("talk");
+		
+		if (TimerText>TimeChangeText)
+		{
+			return num;
+		}
+		else
+		{
+			
+			return new System.Random().Next(DialogList.Length);
+		}
 	}
-	
-	private void OnTriggerEnter2D(Collider2D collision)
-   {
-	   if(collision.gameObject.CompareTag("Player"))
-	   {
-		   anim.SetTrigger("talk");
-		   //Here add text
-	   }
-   }
-	
+	void CheckDistance()
+	{
+		if(Vector3.Distance(target.position, transform.position)<=talkRaidus){
+			anim.SetTrigger("talk");
+			dialogActive=true;
+			dialogBox.SetActive(true);
+			num=RandomAtMoment();
+			dialogText.text =DialogList[num];
+
+			
+
+			
+			
+		}
+		else{
+			anim.ResetTrigger("talk");
+			dialogBox.SetActive(false);
+			dialogActive=false;
+			if(TimeChangeText<TimerText) {
+				TimerText=0.0f;
+			}
+		}
+		
+	}
 }
