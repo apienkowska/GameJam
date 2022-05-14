@@ -1,0 +1,68 @@
+  Assets/Pixel Adventure 1/Assets/Fonts.meta
+    Assets/Pixel Adventure 1/Assets/Fonts/PressStart2P-Regular.ttf
+    Assets/Pixel Adventure 1/Assets/Fonts/PressStart2P-Regular.ttf.meta
+    Assets/Pixel Adventure 1/Assets/Items.meta
+    Assets/Pixel Adventure 1/Assets/Items/Boxes.meta
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box1.meta
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box1/Break (28x24).png
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box1/Break (28x24).png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box1/Hit (28x24).png
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box1/Hit (28x24).png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box1/Idle.png
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box1/Idle.png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box2.meta
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box2/Break (28x24).png
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box2/Break (28x24).png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box2/Hit (28x24).png
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box2/Hit (28x24).png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box2/Idle.png
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box2/Idle.png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box3.meta
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box3/Break (28x24).png
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box3/Break (28x24).png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box3/Hit (28x24).png
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box3/Hit (28x24).png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box3/Idle.png
+    Assets/Pixel Adventure 1/Assets/Items/Boxes/Box3/Idle.png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints.meta
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint.meta
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Out) (64x64).png
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Out) (64x64).png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/End.meta
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/End/End (Idle).png
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/End/End (Idle).png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/End/End (Pressed) (64x64).png
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/End/End (Pressed) (64x64).png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Start.meta
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Start/Start (Idle).png
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Start/Start (Idle).png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Start/Start (Moving) (64x64).png
+    Assets/Pixel Adventure 1/Assets/Items/Checkpoints/Start/Start (Moving) (64x64).png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Fruits.meta
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Apple.png
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Apple.png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Bananas.png
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Bananas.png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Cherries.png
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Cherries.png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Collected.png
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Collected.png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Kiwi.png
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Kiwi.png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Melon.png
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Melon.png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Orange.png
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Orange.png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Pineapple.png
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Pineapple.png.meta
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Strawberry.png
+    Assets/Pixel Adventure 1/Assets/Items/Fruits/Strawberry.png.meta
+    Assets/Pixel Adventure 1/Assets/Prefabs.meta
+    Assets/Pixel Adventure 1/Assets/Prefabs/Apple.prefab
+    Assets/Pixel Adventure 1/Assets/Prefabs/Apple.prefab.meta
+    Assets/Pixel Adventure 1/Assets/Prefabs/Player.prefab
+    Assets/Pixel Adventure 1/Assets/Prefabs/Player.prefab.meta
