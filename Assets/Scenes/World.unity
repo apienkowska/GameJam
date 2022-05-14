@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 507899919}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,12 +236,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8242847683500447909, guid: 3e38cd62ba9d2b5418a25f7b360c4a19, type: 3}
+      propertyPath: m_Size.x
+      value: 0.67724943
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242847683500447909, guid: 3e38cd62ba9d2b5418a25f7b360c4a19, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0501268
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242847683500447909, guid: 3e38cd62ba9d2b5418a25f7b360c4a19, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00028157234
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242847683500447909, guid: 3e38cd62ba9d2b5418a25f7b360c4a19, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.018100858
+      objectReference: {fileID: 0}
     - target: {fileID: 8242847683500447910, guid: 3e38cd62ba9d2b5418a25f7b360c4a19, type: 3}
       propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8242847683500447915, guid: 3e38cd62ba9d2b5418a25f7b360c4a19, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242847683500447915, guid: 3e38cd62ba9d2b5418a25f7b360c4a19, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8242847683500447915, guid: 3e38cd62ba9d2b5418a25f7b360c4a19, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -328,7 +352,7 @@ GameObject:
   - component: {fileID: 1323958807}
   - component: {fileID: 1323958806}
   - component: {fileID: 1323958805}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -410,7 +434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2110694007}
   - component: {fileID: 2110694008}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Map_MVP2_480_540_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
