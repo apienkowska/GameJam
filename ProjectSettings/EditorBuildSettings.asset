@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: 33b7c85392c21344db034b6353ff72a1
   - enabled: 1
+    path: Assets/Scenes/Start2.unity
+    guid: 10eab180d9409924fbe994441eafe47e
+  - enabled: 1
     path: Assets/Scenes/World.unity
     guid: 898120ccae369014b95b795700c06452
   - enabled: 1
