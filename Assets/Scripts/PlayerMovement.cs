@@ -33,6 +33,9 @@ public class PlayerMovement : MonoBehaviour
 		rb.velocity=new Vector2(dirX*moveSpeed,dirY*moveSpeed);
 		
 		UpdateAnimationState();
+		if (Input.GetKeyDown(KeyCode.Escape)){
+			Application.Quit();
+		}
 		
     }
 	private void UpdateAnimationState()
