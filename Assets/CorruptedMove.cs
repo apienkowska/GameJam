@@ -79,14 +79,16 @@ public class CorruptedMove : MonoBehaviour
 			dialogText.text =dialog;
 			Debug.Log(dialog);
 			ShowDialog(true);
-
-		}
-		else if(dialogActive)
-		{
 			if(TimeChangeText<TimerText) {
 				TimerText=0.0f;
 			}
 		}
+		//else if(dialogActive)
+		//{
+		//	if(TimeChangeText<TimerText) {
+		//		TimerText=0.0f;
+		//	}
+		//}
 		else{
 			ShowDialog(false);
 			
