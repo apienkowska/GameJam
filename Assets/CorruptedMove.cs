@@ -22,7 +22,7 @@ public class CorruptedMove : MonoBehaviour
 	private string dialog;
 	[SerializeField] public bool dialogActive;
 	private int num=0;
-	private float TimeChangeText=0.05f;
+	private float TimeChangeText=5.5f;
 	private float TimerText=0.0f;
 	[SerializeField] string[] DialogListCorrupted={
 		"What you are looking for doesn’t exist! It is just an illusion, not even a fragment of what the truth is!",
@@ -81,6 +81,12 @@ public class CorruptedMove : MonoBehaviour
 			ShowDialog(true);
 
 		}
+		else if(dialogActive)
+		{
+			if(TimeChangeText<TimerText) {
+				TimerText=0.0f;
+			}
+		}
 		else{
 			ShowDialog(false);
 			
@@ -93,13 +99,12 @@ public class CorruptedMove : MonoBehaviour
 	int RandomAtMoment()
 	{
 		
-		if (TimerText>TimeChangeText)
+		if (TimerText<TimeChangeText)
 		{
 			return num;
 		}
 		else
 		{
-			
 			return new System.Random().Next(DialogListCorrupted.Length);
 		}
 	}
