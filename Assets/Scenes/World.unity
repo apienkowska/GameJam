@@ -7940,7 +7940,7 @@ PrefabInstance:
     - target: {fileID: 195386193, guid: 2a73ab017e241f44cab46b823e0c6ad0, type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 929669347}
+      objectReference: {fileID: 0}
     - target: {fileID: 195386193, guid: 2a73ab017e241f44cab46b823e0c6ad0, type: 3}
       propertyPath: unvisible
       value: 
