@@ -3668,14 +3668,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 223451754386455749, guid: 20b72ada7ffb8db46815e3b1bb7f6ee1, type: 3}
-      propertyPath: dialogBox
-      value: 
-      objectReference: {fileID: 2010516962}
-    - target: {fileID: 223451754386455749, guid: 20b72ada7ffb8db46815e3b1bb7f6ee1, type: 3}
-      propertyPath: dialogText
-      value: 
-      objectReference: {fileID: 427614435}
     - target: {fileID: 223451754386455772, guid: 20b72ada7ffb8db46815e3b1bb7f6ee1, type: 3}
       propertyPath: m_Name
       value: NPCBasic
@@ -3749,17 +3741,25 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 887757059}
+    - target: {fileID: 2317669848440421867, guid: ef96573c2d4f9864d8e6cb3b4363410c, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 2010516962}
+    - target: {fileID: 2317669848440421867, guid: ef96573c2d4f9864d8e6cb3b4363410c, type: 3}
+      propertyPath: dialogText
+      value: 
+      objectReference: {fileID: 427614435}
     - target: {fileID: 2317669848440421868, guid: ef96573c2d4f9864d8e6cb3b4363410c, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2317669848440421868, guid: ef96573c2d4f9864d8e6cb3b4363410c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.24
+      value: -7.09
       objectReference: {fileID: 0}
     - target: {fileID: 2317669848440421868, guid: ef96573c2d4f9864d8e6cb3b4363410c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.85
+      value: 9.88
       objectReference: {fileID: 0}
     - target: {fileID: 2317669848440421868, guid: ef96573c2d4f9864d8e6cb3b4363410c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3806,17 +3806,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 195386193, guid: 2a73ab017e241f44cab46b823e0c6ad0, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 887757059}
+    - target: {fileID: 195386193, guid: 2a73ab017e241f44cab46b823e0c6ad0, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 2010516962}
+    - target: {fileID: 195386193, guid: 2a73ab017e241f44cab46b823e0c6ad0, type: 3}
+      propertyPath: dialogText
+      value: 
+      objectReference: {fileID: 427614435}
     - target: {fileID: 5082009911566843605, guid: 2a73ab017e241f44cab46b823e0c6ad0, type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5082009911566843605, guid: 2a73ab017e241f44cab46b823e0c6ad0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -42.04
+      value: -35.55
       objectReference: {fileID: 0}
     - target: {fileID: 5082009911566843605, guid: 2a73ab017e241f44cab46b823e0c6ad0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.73
+      value: -9.75
       objectReference: {fileID: 0}
     - target: {fileID: 5082009911566843605, guid: 2a73ab017e241f44cab46b823e0c6ad0, type: 3}
       propertyPath: m_LocalPosition.z

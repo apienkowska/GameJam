@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 223451754386455744}
   - component: {fileID: 223451754386455745}
   - component: {fileID: 223451754386455774}
-  - component: {fileID: 223451754386455749}
   m_Layer: 0
   m_Name: NPCBasic
   m_TagString: Untagged
@@ -29,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223451754386455772}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -25.914734, y: -2.1146603, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -133,7 +132,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &223451754386455745
 Animator:
   serializedVersion: 3
@@ -169,20 +168,4 @@ MonoBehaviour:
   target: {fileID: 0}
   dialogBox: {fileID: 0}
   dialogText: {fileID: 0}
-  dialogActive: 0
---- !u!114 &223451754386455749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223451754386455772}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bc86f3c73d349346abbd35b5a21f2f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogBox: {fileID: 0}
-  dialogText: {fileID: 0}
-  dialog: EEEEE!!!!
   dialogActive: 0

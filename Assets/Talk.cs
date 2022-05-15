@@ -39,12 +39,10 @@ public class Talk : MonoBehaviour
 			if (dialogBox.activeInHierarchy)
 			{
 				dialogBox.SetActive(false);
-				
 			}
 			else{
 				dialogText.text = dialog;
 				dialogBox.SetActive(true);
-				
 			}
 		CheckDistance();
 	}
@@ -52,14 +50,12 @@ public class Talk : MonoBehaviour
 
 	int RandomAtMoment()
 	{
-		
 		if (TimerText>TimeChangeText)
 		{
 			return num;
 		}
 		else
 		{
-			
 			return new System.Random().Next(DialogList.Length);
 		}
 	}
@@ -71,11 +67,6 @@ public class Talk : MonoBehaviour
 			dialogBox.SetActive(true);
 			num=RandomAtMoment();
 			dialogText.text =DialogList[num];
-
-			
-
-			
-			
 		}
 		else{
 			anim.ResetTrigger("talk");
@@ -85,6 +76,5 @@ public class Talk : MonoBehaviour
 				TimerText=0.0f;
 			}
 		}
-		
 	}
 }

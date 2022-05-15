@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CorruptedMove : MonoBehaviour
 {
@@ -16,6 +17,20 @@ public class CorruptedMove : MonoBehaviour
 	[SerializeField] Transform target;
 	[SerializeField] public float chaseRaidus;
 	[SerializeField] public float attackRaidus;
+	[SerializeField] public Text dialogText;
+	[SerializeField] public GameObject dialogBox;
+	private string dialog;
+	[SerializeField] public bool dialogActive;
+	private int num=0;
+	private float TimeChangeText=0.05f;
+	private float TimerText=0.0f;
+	string[] DialogListCorrupted={
+		"What you are looking for doesn’t exist! It is just an illusion, not even a fragment of what the truth is!",
+"All lies spoken by halfwits in order to pursue a hopeless and selfish dream.",
+ "What truly matters is to never sleep again!",
+ "Come join me in the process!"
+	};
+
 	private enum MovementState 
 	{
 		idle, running, up, down
@@ -29,12 +44,27 @@ public class CorruptedMove : MonoBehaviour
 	   sprite=GetComponent<SpriteRenderer>();
 	   coll=GetComponent<BoxCollider2D>();
 	   target=GameObject.FindWithTag("Player").transform;
+	   dialogText.text=DialogListCorrupted[num];
     }
 
     // Update is called once per frame
     void Update()
     {
-        CheckDistance();
+		TimerText+=Time.deltaTime;
+        
+		if (dialogActive){
+			dialogBox.SetActive(true);
+			num=RandomAtMoment();
+			dialog=DialogListCorrupted[num];
+			dialogText.text =dialog;
+			
+			Debug.Log(dialog);
+		}else
+		{
+			dialogBox.SetActive(false);
+			Debug.Log("Hide1");
+		}
+		CheckDistance();
 		UpdateAnimationState();
     }
 	
@@ -44,6 +74,35 @@ public class CorruptedMove : MonoBehaviour
 			transform.position = Vector3.MoveTowards(transform.position,target.position,moveSpeed*Time.deltaTime);
 			dirX=transform.position.x;
 			dirY=transform.position.y;
+			dialogActive=true;
+			num=RandomAtMoment();
+			dialog=DialogListCorrupted[num];
+			dialogText.text =dialog;
+			Debug.Log(dialog);
+			dialogBox.SetActive(true);
+		}
+		else{
+			dialogBox.SetActive(false);
+			Debug.Log("Hide2");
+			dialogActive=false;
+			
+			if(TimeChangeText<TimerText) {
+				TimerText=0.0f;
+			}
+		}
+	}
+	
+	int RandomAtMoment()
+	{
+		
+		if (TimerText>TimeChangeText)
+		{
+			return num;
+		}
+		else
+		{
+			
+			return new System.Random().Next(DialogListCorrupted.Length);
 		}
 	}
 	private void UpdateAnimationState()
@@ -82,5 +141,6 @@ public class CorruptedMove : MonoBehaviour
 			state=MovementState.down;
 		}
 		anim.SetInteger("state",(int)state);
+
 	}
 }
