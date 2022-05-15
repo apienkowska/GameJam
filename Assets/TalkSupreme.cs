@@ -15,6 +15,8 @@ public class TalkSupreme : MonoBehaviour
 	[SerializeField] public bool playerInRange;
 	private int num=0;
 	[SerializeField] public GameObject unvisible;
+	public GameObject player;
+	[SerializeField] public Text Speed;
 	[SerializeField] string[] DialogList={"You managed to flee from the Corrupter!",
 "Amazing feat for a human!",
  "Thank you for retrieving the Seed! We are now one step closer to maintain the balance.",
@@ -26,6 +28,7 @@ public class TalkSupreme : MonoBehaviour
     {
        rb=GetComponent<Rigidbody2D>();
 	   coll=GetComponent<BoxCollider2D>();
+	   
 	   
     }
 	void Update()
@@ -54,7 +57,9 @@ public class TalkSupreme : MonoBehaviour
 			dialogBox.SetActive(false);
 			playerInRange=false;
 			num=0;
-			unvisible.SetActive(true);
+			player.GetComponent<PlayerMovement>().moveSpeed=14f;
+			Speed.text="Speed: 14";
+			//unvisible.SetActive(true);
 		}else{
 			
 			dialogBox.SetActive(true);

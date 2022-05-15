@@ -59,12 +59,9 @@ public class PlayerLife : MonoBehaviour
 	{
 		rb.bodyType = RigidbodyType2D.Static;
 		anim.SetTrigger("death");
-		if (SceneManager.GetActiveScene().name == "Corrupted"){
-			SceneManager.LoadScene("End");
-		}
-		else{
-		SceneManager.LoadScene("Corrupted");
-		}
+		SceneManager.LoadScene("End");
+		
+		
 	}
 
 	private void RestartLevel()

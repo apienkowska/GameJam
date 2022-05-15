@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 	private Animator anim;
 	private float dirX=0f;
 	private float dirY=0f;
-	[SerializeField] private float moveSpeed=7f; //change to public if i want to change it from other scripts
+	[SerializeField] public float moveSpeed=7f; //change to public if i want to change it from other scripts
 	[SerializeField] private LayerMask jumpableGround;
 	private enum MovementState 
 	{
