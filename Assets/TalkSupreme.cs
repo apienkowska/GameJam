@@ -14,7 +14,7 @@ public class TalkSupreme : MonoBehaviour
 	private string dialog="Hello";
 	[SerializeField] public bool playerInRange;
 	private int num=0;
-	string[] DialogList={"You managed to flee from the Corrupter!",
+	[SerializeField] string[] DialogList={"You managed to flee from the Corrupter!",
 "Amazing feat for a human!",
  "Thank you for retrieving the Seed! We are now one step closer to maintain the balance.",
  "The journey just began, there are plenty of more Seeds to be found and we cannot ensure the balance until all Seeds will be placed in their respective containers.",
@@ -74,6 +74,7 @@ public class TalkSupreme : MonoBehaviour
 		}
 		else{
 			playerInRange=false;
+			dialogBox.SetActive(false);
 		}
 	}
 }

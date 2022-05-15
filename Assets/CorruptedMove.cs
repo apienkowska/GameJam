@@ -24,7 +24,7 @@ public class CorruptedMove : MonoBehaviour
 	private int num=0;
 	private float TimeChangeText=0.05f;
 	private float TimerText=0.0f;
-	string[] DialogListCorrupted={
+	[SerializeField] string[] DialogListCorrupted={
 		"What you are looking for doesn’t exist! It is just an illusion, not even a fragment of what the truth is!",
 "All lies spoken by halfwits in order to pursue a hopeless and selfish dream.",
  "What truly matters is to never sleep again!",
