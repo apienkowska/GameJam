@@ -21,10 +21,11 @@ public class Talk : MonoBehaviour
 	private float TimeChangeText=0.005f;
 	private float TimerText=0.0f;
 	private int num=0;
-	string[] DialogList={"...mmhhmm !!!", 
-		" I know you! / I don’t recognize you!", 
-		"Pinch me! Could this be a dream?",
-		"So tired! Can’t wait to get some sleep!" };
+	//string[] DialogList={"...mmhhmm !!!", 
+	//	" I know you! / I don’t recognize you!", 
+	//	"Pinch me! Could this be a dream?",
+	//	"So tired! Can’t wait to get some sleep!" };
+	[SerializeField] string[] DialogList;
 	void Start()
     {
        rb=GetComponent<Rigidbody2D>();

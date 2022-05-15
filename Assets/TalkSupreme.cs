@@ -14,7 +14,6 @@ public class TalkSupreme : MonoBehaviour
 	private string dialog="Hello";
 	[SerializeField] public bool playerInRange;
 	private int num=0;
-	[SerializeField] string tag;
 	string[] DialogList={"You managed to flee from the Corrupter!",
 "Amazing feat for a human!",
  "Thank you for retrieving the Seed! We are now one step closer to maintain the balance.",

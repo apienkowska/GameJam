@@ -53,7 +53,7 @@ public class CorruptedMove : MonoBehaviour
 		TimerText+=Time.deltaTime;
         
 		if (dialogActive){
-			dialogBox.SetActive(true);
+			ShowDialog(true);
 			num=RandomAtMoment();
 			dialog=DialogListCorrupted[num];
 			dialogText.text =dialog;
@@ -61,8 +61,8 @@ public class CorruptedMove : MonoBehaviour
 			Debug.Log(dialog);
 		}else
 		{
-			dialogBox.SetActive(false);
-			Debug.Log("Hide1");
+			ShowDialog(false);
+			//Debug.Log("Hide1");
 		}
 		CheckDistance();
 		UpdateAnimationState();
@@ -74,17 +74,15 @@ public class CorruptedMove : MonoBehaviour
 			transform.position = Vector3.MoveTowards(transform.position,target.position,moveSpeed*Time.deltaTime);
 			dirX=transform.position.x;
 			dirY=transform.position.y;
-			dialogActive=true;
 			num=RandomAtMoment();
 			dialog=DialogListCorrupted[num];
 			dialogText.text =dialog;
 			Debug.Log(dialog);
-			dialogBox.SetActive(true);
+			ShowDialog(true);
+
 		}
 		else{
-			dialogBox.SetActive(false);
-			Debug.Log("Hide2");
-			dialogActive=false;
+			ShowDialog(false);
 			
 			if(TimeChangeText<TimerText) {
 				TimerText=0.0f;
@@ -105,6 +103,14 @@ public class CorruptedMove : MonoBehaviour
 			return new System.Random().Next(DialogListCorrupted.Length);
 		}
 	}
+	
+	private void ShowDialog(bool value)
+	{
+		dialogBox.SetActive(value);
+		dialogActive=value;
+	}
+	
+	
 	private void UpdateAnimationState()
 	{
 		MovementState state;
