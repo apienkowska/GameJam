@@ -7,7 +7,7 @@ public class PlayerLife : MonoBehaviour
 {
 	private Animator anim;
 	private Rigidbody2D rb;
-	[SerializeField] private int LifeLevel = 100;
+	[SerializeField] private int LifeLevel = 50;
 	[SerializeField] private Text LifeText;
 	SpriteRenderer PlayerSprite;
 	public bool startFading = false;
