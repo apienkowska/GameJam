@@ -464,8 +464,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.6322, y: -168.15579}
-  m_SizeDelta: {x: 624.009, y: 244.936}
+  m_AnchoredPosition: {x: 0.0065308, y: -168.15579}
+  m_SizeDelta: {x: 1134, y: 244.936}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &578048991
 MonoBehaviour:
@@ -480,7 +480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.41869, g: 0.21982914, b: 0.7169812, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -500,9 +500,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Press space to go back...
-
-    Exit to leave...'
+  m_Text: "Press space to go back dreaming... \n\nExit or Escape to wake up..."
 --- !u!222 &578048992
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -588,8 +586,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897944704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -87.2, y: -49.3, z: -10}
+  m_LocalScale: {x: 1.9507165, y: 1.9507165, z: 1.9507165}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -671,7 +669,7 @@ Transform:
   m_GameObject: {fileID: 1401139976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -27.1, y: -30, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3983, y: 1.3983, z: 1.3983}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -710,7 +708,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2, y: 133}
   m_SizeDelta: {x: 1134, y: 618}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1659855729
@@ -726,7 +724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
